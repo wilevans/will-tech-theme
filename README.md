@@ -6,7 +6,7 @@ Isnt will amazing?
 
 ![image](https://raw.githubusercontent.com/wilevans/screenshots/4eb9c55507fe2d14d375abb9c01482bab4ddb5f1/screenshot1.png)
 
-Copyright 2021 William Evans
+Copyright 2022 William Evans
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
