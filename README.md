@@ -1,6 +1,6 @@
 # Will Tech Theme
 
-This is the Will tech theme made olny because I got bored <br/>
+This is the Will tech theme made only because I got bored <br/>
 Isnt will amazing?
 
 
