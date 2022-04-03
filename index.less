@@ -1,0 +1,80 @@
+#app {
+    --color1: #313131; /* the outer main background colour */
+    --color2: #454545; /* the inner main background colour */
+    --textColor: #ffffff; /* the main text colour */
+    --songProgressBackground: #454545; /* the background colour for the unplayed bit of the progress bar */
+    --songProgressColor: #d82c48; /* The colour of teh played part of the progress bar */ 
+    --selected: #d82c497a; /* the outline for the currently playing song selected setting menu ect */
+    --keyColor: #d82c48; /* colour of some text history see all ect, the outline of slected things in settings and the small bar next to the selected menu */
+    --keyColor-rollover: #d82c48; /* the colour sliders go to when the mouse is over it*/
+    --keyColor-pressed: #d82c48; /* the colour sliders change too while mooving */
+    color: #ffffff; /* the colour of text like recently played and the groups in the side bar */
+}
+
+
+
+.md-btn, .md-select {
+    &:not(.md-btn-primary) {
+        background: #d82c497a; /* background for buttons like replay and setting buttons for example account setttings */  
+      }
+  > option, > optgroup, optgroup > option {
+    background: #d82c4994; /* background for the dropdown menus in settings */
+  }
+}
+
+/* Only changing the CSS for the main window */
+#app-main {
+    ::-webkit-scrollbar-thumb { /* controles the normal state and colour of the scroll bar */
+        background: transparent; 
+        border: 6px solid transparent;
+        box-shadow: inset 0px 0px 10px 10px #d82c48;
+        border-radius: 16px;
+        min-height: 64px;
+        transition: border 1s;
+      } 
+    ::-webkit-scrollbar-thumb:hover { /* what changes during mouse over the scroll bar */
+        border: 5px solid transparent;
+        box-shadow: inset 0px 0px 10px 10px #d82c497a;
+    }
+    #navigation-bar { /* changes the colour of the nevbar just below the currently playing song */
+        background: #3a3a3a;
+        mix-blend-mode: unset;
+        .nav-item > svg { /* changes the colour of the icons on the nevbar just below the currently playing song */
+            color: var(--textColor);
+          }
+    }
+    .app-sidebar-item {
+        color: var(--textColor);
+    
+        &.active {
+          background: #d82c497a /* background of currently selected on the side bar */
+        }
+    }
+    .search-input-container {
+        .search-input--icon {
+            z-index: 1; /* makes the serch icon slightly brighter */
+    } 
+    .search-input {
+      color: var(--textColor); /* the background colour of the serch bar */
+      background: #3a3a3a;
+      mix-blend-mode: unset;
+      filter: unset;
+        }                 
+    }
+    .playlist-page {
+        .floating-header {
+          background: #d82c497a; /* the colour of the header that pops up when you scroll down on a playlist */
+          color: var(--textColor); /* left in encase I want to change the text colour */
+        }
+    }
+    .app-drawer {
+        background: #d82c497a; /* background of the lryic popup */
+        border: 2px solid #d82c48;
+    }
+    .app-chrome .app-chrome-item>.app-mainmenu {
+        background: url("assets/logo.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size:contain
+    }  
+}
